@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+        title palette
+        link(rel="stylesheet" type="text/css" href='dist/css/index.css')
+        link(rel="stylesheet" href="font-awesome/css/font-awesome.min.css")
+    body
+        div#menu
+        div#toolbar
+            h5 工具栏：
+            ul.tool_opt
+                li.fa.fa-mouse-pointer(onclick='toChoseF()' title='选择')
+                li.fa.fa-square-o(onclick='addRectF()' title='矩形')
+                li.fa.fa-circle-thin(onclick="addArcF()" title='圆')
+
+            div
+                h5 颜色： 
+                input#color(value='#000000')
+        div.page_main
+            h5 画布：
+            div#paper
+                canvas#palette(width='400' height='400' style="z-index: 1;")
+                canvas#palette_back(width='400' height='400')
+
+
+        script(src='public/js/shape.js')
+        script(src='public/js/main.js')

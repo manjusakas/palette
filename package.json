@@ -1,0 +1,17 @@
+{
+  "name": "palette",
+  "version": "1.0.0",
+  "description": "A canvas project for drawing tool",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-less": "^3.3.2",
+    "gulp-livereload": "^3.8.1"
+  }
+}
