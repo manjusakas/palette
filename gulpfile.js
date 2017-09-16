@@ -7,16 +7,14 @@ gulp.task('less', function () {
     gulp.src('public/style/*.less')
         .pipe(less())
         .pipe(gulp.dest('dist/css'))
-        .pipe(livereload());
 });
 gulp.task('jade', function () {
     gulp.src('index.jade')
       .pipe(jade())
-      .pipe(gulp.dest('./'))
-      .pipe(livereload())
+      .pipe(gulp.dest('dist/'))
 });
 
-gulp.task('default', ['compile-less','render-jade'],()=>{
+gulp.task('default', ['less','jade'],()=>{
     console.log('gulp succuss')
 })
 

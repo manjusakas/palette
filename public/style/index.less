@@ -1,24 +1,51 @@
-body{
-    background:#a7b4c2;
+body {
+  background: #efefef;
+  margin: 0px;
 }
-#palette{
-    //display: none;
-    
+#toolbar {
+    width: 200px;
+    position: fixed;
+    top:0px;
+    height: 100%;
+    box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.4) inset;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    margin: 0px 4px;
 }
-#toolbar{
-    float: left;
+.tool_opt{
+  font-size: 24px;
+  margin: 0px;
+  padding: 0px;
+  color: #555;
 }
-#paper{
-    position: relative;
-    float: right;
-    box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.4);
-    //background: #fff;
-    width: 400px;
-    height: 400px;
-    canvas{
-        position: absolute;
-        left: 0px;
-        right: 0px;
-        //display: none;
-    }
+.tool_opt li{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding-top: 6px;
+    box-sizing: border-box;
+    //margin-right: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.tool_opt li:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.4);
+}
+.page_main{
+  position: relative;
+  margin-left: 220px;
+}
+#paper {
+  position: relative;
+  box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.4) inset;
+  width: 400px;
+  height: 400px;
+  background: #fff;
+}
+#paper canvas {
+  position: absolute;
+  left: 0px;
+  right: 0px;
 }
